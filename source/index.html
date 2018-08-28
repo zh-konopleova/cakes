@@ -156,123 +156,273 @@
         </ul>
       </section>
 
-      <section id="individual-order" class="individual-order">
-        <h2 class="individual-order__h headline">Индивидуальный заказ</h2>
-        <p class="individual-order__preview handwriting">Соберите торт в 3 шага</p>
-        <ul class="individual-order__list">
-          <li class="individual-order__item">
-            <section class="order-step step-1">
-              <h3 class="order-step__h step-1__h">
-                <span class="order-step__h--number">01</span>
-                <span class="order-step__h--name">Выберите начинку</span>
-              </h3>
-              <ul class="step-1__list">
-                <li class="step-1__item">
-                  <div class="filling">
+      <section id="individual-order" class="order">
+        <h2 class="order__h headline">Индивидуальный заказ</h2>
+        <p class="order__preview handwriting">Соберите торт в 3 шага</p>
+
+        <form class="order__form form">
+          <fieldset class="order__step">
+            <legend class="order__legend">
+              <span class="order__number">01</span>
+              <span class="order__name">Выберите начинку</span>
+            </legend>
+
+            <div class="order__content slider order__content--filling">
+              <ul class="order__list order__list--filling">
+                <li>
+                  <article class="filling">
                     <div class="filling__img-wrapper">
-                      <img src="../img/filling.png" class="filling__img" alt="Шоколадный ганаш">
+                      <img
+                        class="filling__img"
+                        src="../img/filling.png"
+                        alt="Шоколадный гана">
                     </div>
-                    <div class="filling__description">
-                      <b class="filling__name">Шоколадный ганаш</b>
-                      <p class="filling__preview">
+
+                    <div class="filling__content">
+                      <h3 class="filling__h">Шоколадный ганаш</h3>
+                      <p class="filling__text">
                         Ароматный шоколадный бисквит, густой шоколадный крем -
                         самый шоколадный из всех возможных десертов!
                       </p>
                       <p class="filling__price">1000 руб/кг</p>
-                      <a href="#" class="filling__button button">Выбрать</a>
+                      <button
+                        type="button"
+                        class="order__button">
+                        Выбрать
+                      </button>
                     </div>
-                  </div>
+                  </article>
                 </li>
               </ul>
-            </section>
-          </li>
 
-          <li class="individual-order__item">
-            <section class="order-step step-2">
-              <h3 class="order-step__h step-2__h">
-                <span class="order-step__h--number">02</span>
-                <span class="order-step__h--name">Размер</span>
-              </h3>
-              <ul class="step-2__list">
-                <li class="step-2__item">
-                  <div class="size">
-                    <img src="../img/circle-1kg.png" class="size__img" alt="">
-                    <p class="size__description">
-                      17-18 см</br>
-                      (1 кг - 6 персон )
-                    </p>
-                  </div>
+              <div class="slider__nav order__slider-nav">
+                <ul class="slider__nav-list">
+                  <li class="slider__nav-item">
+                    <button
+                      class="slider__nav-button active"
+                      type="button">1-ый слайд</button>
+                  </li>
+                  <li class="slider__nav-item">
+                    <button
+                      class="slider__nav-button"
+                      type="button">2-ой слайд</button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="order__step">
+            <legend class="order__legend">
+              <span class="order__number">02</span>
+              <span class="order__name">Размер</span>
+            </legend>
+
+            <div class="order__content slider order__content--size">
+              <ul class="order__list order__list--size">
+                <li class="order__item">
+                  <article class="size size--1kg">
+                    <p class="size__weight">1кг</p>
+
+                    <h3 class="size__h">17-18 см</h3>
+                    <p class="size__description">(1 кг - 6 персон)</p>
+
+                    <button
+                      type="button"
+                      class="order__button order__button--size">
+                      Выбрать
+                    </button>
+                  </article>
                 </li>
-                <li class="step-2__item">
-                  <img src="" class="size__img" alt="2кг">
-                  <p class="size__description">
-                    23-24 см
-                    (10 - 12 персон )
-                  </p>
+                <li class="order__item">
+                  <article class="size size--2kg">
+                    <p class="size__weight">2кг</p>
+
+                    <h3 class="size__h">23-24 см</h3>
+                    <p class="size__description">(10-12 персон)</p>
+
+                    <button
+                      type="button"
+                      class="order__button order__button--size">
+                      Выбрать
+                    </button>
+                  </article>
                 </li>
-                <li class="step-2__item">
-                  <img src="" class="size__img" alt="2кг">
-                  <p class="size__description">
-                    Два яруса 25 и 20 см
-                    (15 - 20 персон )
-                  </p>
+                <li class="order__item">
+                  <article class="size size--5kg">
+                    <p class="size__weight">5кг</p>
+
+                    <h3 class="size__h">Два яруса 25 и 20 см</h3>
+                    <p class="size__description">(15-20 персон)</p>
+
+                    <button
+                      type="button"
+                      class="order__button order__button--size">
+                      Выбрать
+                    </button>
+                  </article>
                 </li>
-                <li class="step-2__item">
-                  <img src="" class="size__img" alt="8кг">
-                  <p class="size__description">
-                    Три яруса 30,25 и 18 см
-                    (25 - 30 персон )
-                  </p>
+                <li class="order__item">
+                  <article class="size size--8kg">
+                    <p class="size__weight">8кг</p>
+
+                    <h3 class="size__h">Три яруса 30, 25 и 18 см</h3>
+                    <p class="size__description">(25-30 персон)</p>
+
+                    <button
+                      type="button"
+                      class="order__button order__button--size">
+                      Выбрать
+                    </button>
+                  </article>
                 </li>
               </ul>
-              <a href="#" class="size__button button">Выбрать</a>
-            </section>
-          </li>
 
-          <li class="individual-order__item">
-            <section class="order-step step-3">
-              <h3 class="order-step__h step-3__h">
-                <span class="order-step__h--number">03</span>
-                <span class="order-step__h--name">Оформление</span>
-              </h3>
-              <ul class="step-3__list">
-                <li class="step-3__item">
-                  <div class="decor">
-                    <img src="" alt="Ягодное ассорти">
-                    <p class="decor__descroption">Ягодное ассорти</p>
-                    <p class="decor__price">700 руб/кг</p>
-                  </div>
+              <div class="slider__nav order__slider-nav order__slider-nav--size">
+                <ul class="slider__nav-list">
+                  <li class="slider__nav-item">
+                    <button
+                      class="slider__nav-button"
+                      type="button">1-ый слайд</button>
+                  </li>
+                  <li class="slider__nav-item">
+                    <button
+                      class="slider__nav-button active"
+                      type="button">2-ой слайд</button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="order__step order__step--decor">
+            <legend class="order__legend">
+              <span class="order__number">03</span>
+              <span class="order__name">Оформление</span>
+            </legend>
+
+            <div class="order__content slider order__content--decor">
+              <ul class="order__list order__list--decor">
+                <li class="order__item order__item--decor">
+                  <article class="decor">
+                    <img
+                      class="decor__img"
+                      src="../img/docer_01.png"
+                      alt="Шоколадный гана">
+
+                    <div class="decor__content">
+                      <h3 class="decor__h">Маршмэллоу</h3>
+                      <p class="decor__price">600 руб/кг</p>
+                      <button
+                        type="button"
+                        class="order__button order__button--decor">
+                        Выбрать
+                      </button>
+                    </div>
+                  </article>
                 </li>
-                <li>
-                  <div class="decor">
-                    <img src="" alt="Маршмэллоу">
-                    <p class="decor__descroption">Маршмэллоу</p>
-                    <p class="decor__price">600 руб/кг</p>
-                  </div>
+                <li class="order__item order__item--decor">
+                  <article class="decor">
+                    <img
+                      class="decor__img"
+                      src="../img/docer_01.png"
+                      alt="Шоколадный гана">
+
+                    <div class="decor__content">
+                      <h3 class="decor__h">Маршмэллоу</h3>
+                      <p class="decor__price">600 руб/кг</p>
+                      <button
+                        type="button"
+                        class="order__button order__button--decor">
+                        Выбрать
+                      </button>
+                    </div>
+                  </article>
                 </li>
+                <li class="order__item order__item--decor">
+                  <article class="decor">
+                    <img
+                      class="decor__img"
+                      src="../img/docer_01.png"
+                      alt="Шоколадный гана">
+
+                    <div class="decor__content">
+                      <h3 class="decor__h">Маршмэллоу</h3>
+                      <p class="decor__price">600 руб/кг</p>
+                      <button
+                        type="button"
+                        class="order__button order__button--decor">
+                        Выбрать
+                      </button>
+                    </div>
+                  </article>
+                </li>
+
               </ul>
-            </section>
-          </li>
-        </ul>
 
-        <section class="order-choice">
-          <h2 class="headline">Ваш выбор</h2>
-          <form class="order-choice__form form" action="index.html" method="post">
-            <div class="form__field">
-              <label class="handwriting form__label" for="">Начинка</label>
-              <input class="form__input" type="text" name="" value="Шоколадный ганаш" readonly>
+              <div class="slider__nav order__slider-nav">
+                <ul class="slider__nav-list">
+                  <li class="slider__nav-item">
+                    <button
+                      class="slider__nav-button active"
+                      type="button">1-ый слайд</button>
+                  </li>
+                  <li class="slider__nav-item">
+                    <button
+                      class="slider__nav-button"
+                      type="button">2-ой слайд</button>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div class="form__field">
-              <label class="handwriting form__label" for="">Размер</label>
-              <input class="form__input" type="text" name="" value="2 кг" readonly>
+          </fieldset>
+
+          <div class="order__step order__step--result">
+            <b class="order__result-h">Ваш выбор</b>
+
+            <div class="order__content order__content--result">
+              <div class="order__form-field">
+                <label
+                  for="order__filling-input"
+                  class="order__label handwriting">Начинка</label>
+                <input
+                  id="order__filling-input"
+                  class="order__input"
+                  type="text"
+                  value="Шоколадные ганаш"
+                  readonly>
+              </div>
+
+              <div class="order__form-field">
+                <label
+                  for="order__size-input"
+                  class="order__label handwriting">Размер</label>
+                <input
+                  id="order__size-input"
+                  class="order__input order__input--size"
+                  type="text"
+                  value="1 кг"
+                  readonly>
+              </div>
+
+              <div class="order__form-field">
+                <label
+                  for="order__decor-input"
+                  class="order__label handwriting">Оформление</label>
+                <input
+                  id="order__decor-input"
+                  class="order__input"
+                  type="text"
+                  value="Маршмэллоу"
+                  readonly>
+              </div>
+
+              <button
+                type="submit"
+                class="order__button order__button--result">Заказать торт</button>
             </div>
-            <div class="form__field">
-              <label class="handwriting form__label" for="">Оформление</label>
-              <input class="form__input" type="text" name="" value="Маршмэллоу" readonly>
-            </div>
-            <button class="button" type="submit">Заказать торт</button>
-          </form>
-        </section>
+          </div>
+        </form>
       </section>
 
       <section class="reviews" id="reviews">

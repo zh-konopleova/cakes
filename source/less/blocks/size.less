@@ -2,16 +2,120 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-}
+  min-height: 320px;
 
-.size__description {
-  padding: 0;
-  margin: 0;
-  margin-top: 40px;
   text-align: center;
 }
 
-.size__button {
-  display: inline-block;
-  padding: 20px 45px;
+.size:hover,
+.size:active {
+  color: #f50049;
+  cursor: pointer;
+}
+
+.size__weight {
+  width: 140px;
+  height: 140px;
+
+  margin: 0 auto;
+  margin-top: auto;
+  margin-bottom: 20px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% auto;
+
+  text-align: center;
+  line-height: 140px;
+  vertical-align: middle;
+}
+
+.size--1kg .size__weight {
+  background-image: url("../img/circle-1kg.png");
+}
+
+.size--2kg .size__weight {
+  background-image: url("../img/circle-2kg.png");
+}
+
+.size--5kg .size__weight {
+  background-image: url("../img/circle-5kg.png");
+}
+
+.size--8kg .size__weight {
+  background-image: url("../img/circle-8kg.png");
+}
+
+.size__h {
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.size__description {
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+@media (min-width: @tablet-width) {
+  .size {
+    min-height: 250px;
+  }
+
+  .size--1kg .size__weight {
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+  }
+
+  .size--2kg .size__weight {
+    width: 110px;
+    height: 110px;
+    line-height: 110px;
+  }
+
+  .size--5kg .size__weight {
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+  }
+
+  .size--8kg .size__weight {
+    width: 140px;
+    height: 140px;
+    line-height: 140px;
+  }
+
+  .size__description {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .size {
+    min-height: 280px;
+  }
+
+  .size--1kg .size__weight {
+    width: 115px;
+    height: 115px;
+    line-height: 115px;
+  }
+
+  .size--2kg .size__weight {
+    width: 160px;
+    height: 160px;
+    line-height: 160px;
+  }
+
+  .size--5kg .size__weight {
+    width: 180px;
+    height: 180px;
+    line-height: 180px;
+  }
+
+  .size--8kg .size__weight {
+    width: 205px;
+    height: 205px;
+    line-height: 205px;
+  }
 }

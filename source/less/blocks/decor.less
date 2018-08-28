@@ -1,0 +1,47 @@
+.decor {
+  padding-top: 10px;
+  text-align: center;
+}
+
+.decor__img {
+  width: 180px;
+  height: auto;
+  margin-bottom: 15px;
+
+  box-shadow: 0 0 2.5px 2.5px #eee;
+}
+
+.decor__h {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.decor__price {
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+
+@media (min-width: @tablet-width) {
+  .decor {
+    position: relative;
+    width: 100%;
+  }
+
+  .decor__content {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .decor__img {
+    width: 200px;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .decor__img {
+    width: 320px;
+  }
+}
