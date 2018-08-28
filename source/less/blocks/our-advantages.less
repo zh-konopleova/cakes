@@ -1,0 +1,125 @@
+.our-advantages {
+  margin-top: 45px;
+}
+
+.our-advantages__h {
+  padding-left: @mobile-container-padding;
+  padding-right: @mobile-container-padding;
+  font-size: 24px;
+  text-align: center;
+}
+
+.our-advantages__intro {
+  padding: 0 @mobile-container-padding;
+  margin: 15px 0;
+  font-size: 22px;
+  text-align: center;
+}
+
+.our-advantages__description {
+  padding: 15px @mobile-container-padding;
+  margin: 0;
+  background-color: #ffffff;
+}
+
+.our-advantages__item {
+  max-width: 280px;
+  padding: 0;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.our-advantages__item svg {
+  width: 65px;
+  height: 65px;
+  display: block;
+  margin: auto;
+  margin-bottom: 15px;
+  fill: #f50049;
+}
+
+.our-advantages__item:last-child svg circle {
+  stroke: #f50049;
+  stroke-width: 2px;
+  fill: none;
+}
+
+.our-advantages__b {
+  padding: 0;
+  margin: 0;
+  font-size: 15px;
+}
+
+.our-advantages__text {
+  padding: 0;
+  margin: 0;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+@media (min-width: @tablet-width) {
+  .our-advantages {
+    width: @tablet-container-width;
+    margin: auto;
+    padding: 30px @tablet-container-padding;
+    background-image: url("../img/our-advantages__cake-2.png");
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 400px 420px;
+  }
+
+  .our-advantages__h {
+    margin-top: 55px;
+    font-size: 28px;
+  }
+
+  .our-advantages__intro {
+    font-size: 26px;
+  }
+
+  .our-advantages__description {
+    margin-top: 60px;
+    margin-left: 360px;
+    background-color: transparent;
+  }
+
+  .our-advantages__item {
+    // max-width: 340px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 15px;
+    text-align: left;
+  }
+
+  .our-advantages__item svg {
+    flex-shrink: 0;
+    margin-bottom: 0;
+  }
+
+  .our-advantages__info {
+    margin-left: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .our-advantages {
+    width: @desktop-container-width;
+    padding-left: @desktop-container-padding;
+    padding-right: @desktop-container-padding;
+    background-position: 50px 120px;
+  }
+  .our-advantages__description {
+    max-width: 700px;
+    margin-top: 20px;
+    margin-left: 320px;
+  }
+
+  .our-advantages__h {
+    font-size: 40px;
+  }
+
+  .our-advantages__intro {
+    font-size: 35px;
+  }
+}

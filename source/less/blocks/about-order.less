@@ -1,0 +1,90 @@
+.about-order {
+  padding-left: @mobile-container-padding;
+  padding-right: @mobile-container-padding;
+  background-color: #e3333c;
+  color: #ffffff;
+}
+
+.about-order__wrapper {
+  padding-top: 30px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-order__h {
+  padding: 0;
+  margiin: 0;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.about-order__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.about-order__item {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.about-order__number {
+  margin-top: -10px;
+  font-family: "PlayfairDisplay", serif;
+  font-size: 35px;
+  margin-right: 15px;
+}
+
+.about-order__text {
+  max-width: 225px;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+
+.about-order__b {
+  margin-bottom: 7px;
+}
+
+@media (min-width: @tablet-width) {
+  .about-order {
+    padding-left: @tablet-container-padding;
+    padding-right: @tablet-container-padding;
+  }
+
+  .about-order__wrapper {
+    background-image: url("../img/about-order.png");
+    background-repeat: no-repeat;
+    background-size: 350px 350px;
+    background-position: 100px center;
+  }
+
+  .about-order__h {
+    text-align: right;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .about-order {
+    padding-left: @desktop-container-padding;
+    padding-right: @desktop-container-padding;
+  }
+
+  .about-order__wrapper {
+    width: @desktop-container-width;
+  }
+
+  .about-order__h {
+    margin-left: 60px;
+  }
+
+  .about-order__list {
+    margin-left: 60px;
+  }
+}

@@ -1,0 +1,143 @@
+.about-us {
+  padding-left: @mobile-container-padding;
+  padding-right: @mobile-container-padding;
+  margin: auto;
+}
+
+.about-us__h {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.about-us__wrapper {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.about-us__img {
+  width: 160px;
+  height: 160px;
+
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.about-us__links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.about-us__link {
+  width: 35px;
+  height: 35px;
+  padding-top: 10px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.about-us__headline {
+  padding: 0;
+  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  font-size: 22px;
+  text-align: center;
+}
+
+.about-us__text-block {
+  padding: 0;
+  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.about-us__text {
+  padding: 0;
+  margin: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .about-us {
+    padding-left: @tablet-container-padding;
+    padding-right: @tablet-container-padding;
+  }
+
+  .about-us__h {
+    margin-bottom: -10px;
+    text-align: left;
+  }
+
+  .about-us__wrapper {
+    flex-direction: row;
+  }
+
+  .about-us__img {
+    width: 315px;
+    height: 315px;
+    order: 2;
+  }
+
+  .about-us__description {
+    max-width: 540px;
+    display: flex;
+    flex-direction: column;
+
+    margin-right: 35px;
+  }
+
+  .about-us__headline {
+    font-size: 26px;
+    text-align: left;
+  }
+
+  .about-us__introduction {
+    font-size: 15px;
+  }
+
+  .about-us__links {
+    order: 2;
+    justify-content: flex-start;
+  }
+
+  .about-us__link {
+    margin-right: 25px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .about-us {
+  width: @desktop-width;
+  padding-left: @desktop-container-padding;
+  padding-right: @desktop-container-padding;
+  }
+
+  .about-us__description {
+    width: 564px;
+  }
+
+  .about-us__img {
+    width: 510px;
+    height: 510px;
+  }
+
+  .about-us__headline {
+    font-size: 35px;
+  }
+
+  .about-us__introduction {
+    font-size: 20px;
+  }
+
+  .about-us__text {
+    margin: 0;
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,39 @@
+.signature {
+  margin-top: 70px;
+}
+
+.signature__text {
+  max-width: 350px;
+  padding: 0;
+  margin: 10px auto 20px auto;
+  font-family: "PlayfairDisplay", cursive;
+  font-size: 13px;
+  text-align: center;
+}
+
+.signature__img {
+  width: 70px;
+  display: block;
+  margin: auto;
+}
+
+@media (min-width: @tablet-width) {
+  .signature__img {
+    width: 85px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .signature {
+    margin-top: 115px;
+  }
+
+  .signature__text {
+    max-width: 620px;
+    font-size: 22px;
+  }
+
+  .signature__img {
+    width: 150px;
+  }
+}
