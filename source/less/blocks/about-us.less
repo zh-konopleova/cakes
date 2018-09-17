@@ -9,6 +9,7 @@
   margin: 0;
   margin-bottom: 25px;
   text-align: center;
+  line-height: 1;
 }
 
 .about-us__wrapper {
@@ -35,11 +36,15 @@
 .about-us__link {
   width: 35px;
   height: 35px;
-  padding-top: 10px;
+  padding-top: 7px;
   box-sizing: border-box;
+
+  font-size: 20px;
+  color: #f50049;
+  text-align: center;
+  text-decoration: none;
   background-color: #ffffff;
   border-radius: 50%;
-  text-align: center;
 }
 
 .about-us__headline {
@@ -62,6 +67,10 @@
 .about-us__text {
   padding: 0;
   margin: 0;
+}
+
+.about-us__text {
+  margin-bottom: 10px;
 }
 
 @media (min-width: @tablet-width) {
@@ -114,9 +123,13 @@
 
 @media (min-width: @desktop-width) {
   .about-us {
-  width: @desktop-width;
-  padding-left: @desktop-container-padding;
-  padding-right: @desktop-container-padding;
+    width: @desktop-container-width;
+    padding-left: @desktop-container-padding;
+    padding-right: @desktop-container-padding;
+  }
+
+  .about-us__wrapper {
+    justify-content: space-between;
   }
 
   .about-us__description {
@@ -126,6 +139,8 @@
   .about-us__img {
     width: 510px;
     height: 510px;
+
+    margin: 0;
   }
 
   .about-us__headline {
@@ -137,7 +152,6 @@
   }
 
   .about-us__text {
-    margin: 0;
     font-size: 18px;
   }
 }

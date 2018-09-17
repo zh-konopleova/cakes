@@ -6,6 +6,7 @@
 }
 
 .reviews__h {
+  margin-bottom: 25px;
   text-align: center;
 }
 
@@ -15,6 +16,11 @@
   list-style: none;
 }
 
+.reviews__slider-nav {
+  display: flex;
+  justify-content: center;
+}
+
 @media (min-width: @tablet-width) {
   .reviews {
     padding-left: @tablet-container-padding;
@@ -22,6 +28,7 @@
     background-image: url("../img/review-decor.png");
     background-repeat: no-repeat;
     background-position: center -5px;
+    background-size: 100%;
   }
 }
 
@@ -29,5 +36,9 @@
   .reviews {
     padding-left: @desktop-container-padding;
     padding-right: @desktop-container-padding;
+  }
+
+  .reviews__h {
+    margin-bottom: 50px;
   }
 }

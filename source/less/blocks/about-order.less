@@ -5,6 +5,10 @@
   color: #ffffff;
 }
 
+.about-order__img {
+  display: none;
+}
+
 .about-order__wrapper {
   padding-top: 30px;
   margin: auto;
@@ -41,7 +45,7 @@
 }
 
 .about-order__text {
-  max-width: 225px;
+  max-width: 270px;
   display: flex;
   flex-direction: column;
   padding: 0;
@@ -54,19 +58,29 @@
 
 @media (min-width: @tablet-width) {
   .about-order {
-    padding-left: @tablet-container-padding;
-    padding-right: @tablet-container-padding;
+    padding: 20px @tablet-container-padding 30px;
+    // padding-right: @tablet-container-padding;
   }
 
   .about-order__wrapper {
-    background-image: url("../img/about-order.png");
-    background-repeat: no-repeat;
-    background-size: 350px 350px;
-    background-position: 100px center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .about-order__img {
+    width: 350px;
+    height: 350px;
+    display: block;
+    margin-left: 45px;
+  }
+
+  .about-order__content {
+    text-align: left;
   }
 
   .about-order__h {
-    text-align: right;
+    text-align: left;
   }
 }
 
@@ -74,17 +88,11 @@
   .about-order {
     padding-left: @desktop-container-padding;
     padding-right: @desktop-container-padding;
+
   }
 
   .about-order__wrapper {
     width: @desktop-container-width;
-  }
-
-  .about-order__h {
-    margin-left: 60px;
-  }
-
-  .about-order__list {
-    margin-left: 60px;
+    margin: auto;
   }
 }
